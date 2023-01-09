@@ -38,9 +38,9 @@ console.log(otherIngredients);
 };
 const properties = Object.keys(openingHours);
 console.log(properties);
-let openStr='We are open on ${properties.lenghth}day';
+let openStr=`We are open on ${properties.lenghth}day`;
 for (const day of properties){
-   openStr += '$(day),';
+   openStr += `${day},`;
 }
 console.log(openStr);
 
@@ -53,5 +53,5 @@ const entire = Object.entries(openingHours);
 //console.log(entire);
 // [key, values]
 for(const [key, {open , close}]of entire){
-    console.log('On ${key} we open at ${open} and close at ${close}');
+    console.log(`On ${key} we open at ${open} and close at ${close}`);
 }
