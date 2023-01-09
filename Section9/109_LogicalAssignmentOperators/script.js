@@ -33,9 +33,24 @@ console.log(otherIngredients);
 
     }
 };
-restaurant.numGuests =null;
-const guests1 =restaurant.numGuests || 10;
-console.log(guests1);
-// nullish: null && undefined
-const guestCorrect =restaurant.numGuests ?? 10;
-console.log(guestCorrect);
+const rest1 = {
+    name : 'Capri',
+    numGuests :0,
+};
+const rest2 = {
+    name : 'La Piazza',
+    owner : 'Giovanni Rossi',
+};
+// rest1.numGuests = rest1.numGuests ||10;
+// rest2.numGuests = rest2.numGuests ||10;
+// rest1.numGuests ||=10;
+// rest2.numGuests ||=10;
+rest1.numGuests ??=10;
+rest2.numGuests ??=10;
+
+// rest1.owner = rest1.owner && '<hi>';
+// rest2.owner = rest2.owner && '<hi>';
+rest1.owner ??=  '<hi>';
+rest2.owner ??=  '<hi>';
+console.log(rest1);
+console.log(rest2);
