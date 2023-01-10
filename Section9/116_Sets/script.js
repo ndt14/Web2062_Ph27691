@@ -36,22 +36,27 @@ console.log(otherIngredients);
 
     }
 };
-const properties = Object.keys(openingHours);
-console.log(properties);
-let openStr=`We are open on ${properties.lenghth}day`;
-for (const day of properties){
-   openStr += `${day},`;
-}
-console.log(openStr);
-
-// Property Values
-const values = Object.values(openingHours);
-console.log(values);
-
-// entire object
-const entire = Object.entries(openingHours);
-//console.log(entire);
-// [key, values]
-for(const [key, {open , close}]of entire){
-    console.log(`On ${key} we open at ${open} and close at ${close}`);
-}
+const odersSet = new Set([
+    'Pasta',
+    'Pizza',
+    'Pizza',
+    'Risotto',
+    'Pizza',
+'Pasta',
+]);
+console.log(odersSet);
+console.log(new Set('Jonas'));
+console.log(odersSet.has('Pizza'));
+console.log(odersSet.has('Bread'));
+odersSet.add('Garlic Bread');
+odersSet.add('Garlic Bread');
+// odersSet.delete('Risotto');
+console.log(odersSet);
+for( const oder of odersSet) console.log(oder);
+const staff = ['Waiter','Chef','Waiter','Manager','Chef','Waiter'];
+const staffUnique = [...new Set(staff)];
+console.log(staffUnique);
+console.log(
+    new Set(['Waiter','Chef','Waiter','Manager','Chef','Waiter']).size
+);
+console.log(new Set('nguyenducthinh').size);

@@ -22,7 +22,7 @@ const restaurant ={
         return[this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
     },
     orderDelivery: function(starterIndex, mainIndex, time, address) {
-        console.log('Order received! ${this.starterMenu[starterIndex]} and {this.mainMenu[mainIndex]} will be delivery to ${address} at ${time}');
+        console.log(`Order received! ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivery to ${address} at ${time}`);
     },
 };
 
