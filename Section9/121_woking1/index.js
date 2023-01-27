@@ -71,4 +71,5 @@ checkMiddleSeat('11B');
 checkMiddleSeat('23C');
 checkMiddleSeat('3E');
 
+
 console.log(new String('Jonas'));
