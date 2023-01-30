@@ -20,7 +20,7 @@ transformer('JavaScript is the best!', oneWord);
 
 // JS users callbacks all the time
 const high5 = function() {
-    console.log('icon_xin_chao');
+    console.log('hello');
 };
 document.body.addEventListener('click', high5);
 ['Jonas', 'Martha', 'Adam'].forEach(high5);
